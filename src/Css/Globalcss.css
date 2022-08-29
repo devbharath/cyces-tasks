@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.loginpage{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8FBFF;
+}
+.form-cont{
+    width: 100%;
+    max-width: 480px;
+}
+.form-top-logo h3{
+    color: rgb(0, 0, 114);
+    font-size: 24px;
+    font-weight: 500;
+}
+.form-bottom-logo h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.form-top-logo{
+    background-color: white;
+    margin: 2px 0px;
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+.form-top-logo img{
+    height: 50px;
+    width: 200px;
+    margin-top: 60px;
+}
+.form-top-logo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-bottom-logo{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    justify-content: center;
+    padding: 20px 40px;
+    gap: 14px;
+}
+
+.form-cont .input{
+    width: 100% !important;
+    position: relative;
+}
+.form-cont input{
+    width: 100% !important;
+    border-radius: 7px;
+    border: 1px solid rgba(183, 192, 204, 0.712);
+    padding: 15px ;
+}
+.form-cont a{
+    font-size: 12px;
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+}
+
+input[type=button]{
+    width: 100% !important;
+    background-color: #FF9E45;
+    color: white;
+    padding: 12px;
+    margin: 23px 0px;
+}
+
+.poweredBy{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.poweredBy img{
+    width: 80px;
+}
+input:focus{
+    outline: 1px solid rgba(183, 192, 204, 0.767);
+}
+input::placeholder{
+    color: black;
+    font-weight: 300;
+}
+label{
+    position: absolute;
+    font-size: 14px;
+    transform: translate(18px, 12px);
+    z-index: 999;
+    background-color: white;
+    transition: 200ms linear ;
+
+}
+.form-cont .input:focus-within label{
+    transform: translate(13px, -10px);
+    font-size: 12px;
+    padding: 1px 4px;
+}
+.filled{
+    transform: translate(13px, -10px);
+    font-size: 12px;
+    padding: 1px 4px;
+}
